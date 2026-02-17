@@ -1,0 +1,94 @@
+\newcommand{\turma}{INFORMÁTICA 3.\textordmasculine\ ANO}
+\newcommand{\numProva}{A}
+\newcommand{\professor}{Igor Martins Silva}
+\newcommand{\bimestre}{1}
+\newcommand{\ano}{2026}
+\newcommand{\mesTexto}{abril}
+\newcommand{\mesNum}{04}
+\newcommand{\dia}{24}
+\newcommand{\dataTexto}{\dia\ de \mesTexto\ de \ano}
+\newcommand{\dataNun}{\dia/\mesNum/\ano}
+
+\newcommand{\titulo}{}
+
+\ifdefstring{\atividade}{prova}
+  {\renewcommand{\titulo}{Avaliação de Matemática}}
+{
+\ifdefstring{\atividade}{lista}
+  {\renewcommand{\titulo}{Lista de exercícios de Matemática}}
+{
+\ifdefstring{\atividade}{as}
+  {\renewcommand{\titulo}{Avaliação Somativa}}
+{
+\ifdefstring{\atividade}{ad}
+  {\renewcommand{\titulo}{Avaliação Diagnóstica}}
+  {\renewcommand{\titulo}{Atividade de Matemática}}
+}}}
+
+\newcommand{\emtipo}{%
+  \ifdefstring{\tipo}{individual}{\tipo}{em \tipo}%
+}
+
+\newcommand{\subtitulobase}[3]{%
+    % #1 = título da 1ª coluna
+    % #2 = conteúdo da 1ª coluna
+    % #3 = mostra número da prova? (vazio ou algo)
+    
+    \begin{center}
+        CEFET-MG -- Campus Contagem \\[3pt]
+        \titulo\ -- \bimestre.\textordmasculine\ Bimestre de \ano \\[3pt]
+        \professor
+    \end{center}
+    
+    \begin{center}
+        \vspace{15pt}
+        \begin{tabular}{|C{210pt}|C{70pt}|C{210pt}|}
+            \hline
+            \textbf{#1} &
+            \textbf{DATA} &
+            \textbf{TURMA} \\
+            \hline
+            #2 & \dataNun & \turma \\
+            \hline
+        \end{tabular}
+    \end{center}
+    
+    #3
+    
+    \vspace{15pt}
+}
+
+\newcommand{\subtitulolis}{%
+  \subtitulobase{ASSUNTO}{\assunto}{}%
+}
+
+\newcommand{\subtitulopr}{%
+  \subtitulobase{ASSUNTO}{\assunto}{\boxed{\numProva}}%
+}
+
+\newcommand{\subtituloas}{%
+  \subtitulobase{DISCIPLINA}{MATEMÁTICA}{}%
+}
+
+\newcommand{\subtituload}{%
+  \subtitulobase{DISCIPLINA}{MATEMÁTICA}{}%
+}
+
+\newcommand{\valorquestao}{}
+
+\newenvironment{exercicioBanco}[1][]{%
+    \ifdefstring{\atividade}{prova}{%
+        \begin{exercicio}[#1]%
+    }{%
+        \begin{exercicio}%
+    }%
+}{%
+    \end{exercicio}
+}
+
+\ifdefstring{\atividade}{lista}{
+    \pagecolor{background-color}
+}{
+    
+}
+

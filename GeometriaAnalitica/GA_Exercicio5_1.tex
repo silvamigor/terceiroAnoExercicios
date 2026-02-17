@@ -1,0 +1,59 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \ifdefstring{\modo}{objetivo}{%
+        \renewcommand{\valorquestao}{\ValorQObj\ ponto}
+    }{%
+        \renewcommand{\valorquestao}{\ValorQDisc\ pontos}
+    }%
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+Para cada afirmativa abaixo, assinale se ela é verdadeira (V) ou falsa (F).
+%
+\begin{enumerate}[\(\bullet\)]
+    \item \(A = (0,2)\), \(B = (-3,1)\) e \(C = (4,5)\) estão alinhados.
+    %
+    \item \(P = (2,3)\) pertence à reta que contém os pontos \(A = (1,1)\) e \(B = (0,-3)\).
+    %
+    \item As retas \(r\) e \(s\) determinadas, respectivamente, pelas equações \(15x + 10y - 3 = 0\) e \(9x + 6y - 1 = 0\) são paralelas.
+    %
+    \item A distância entre o ponto \(P = (0,3)\) e a reta \(r: 4x + 3y + 1 = 0\) é \(2\).
+\end{enumerate}
+%
+
+% Define as alternativas
+\newcommand{\alternativas}{%
+    \begin{center}
+        \begin{tabularx}{\textwidth}{XXXXX}
+            (a) (V, F, F, V). &
+            (b) (V, F, F, F). &
+            (c) (F, V, V, F). &
+            (d) (F, F, V, V). &
+            (e) (F, V, F, V).
+        \end{tabularx}
+    \end{center}
+}
+
+% Define a resposta correta
+\newcommand{\resposta}{D}
+
+% Lógica condicional para exibição
+\ifdefstring{\atividade}{lista}{%
+    \alternativas
+    \vspace{0.5em}
+    
+    \noindent\textbf{Resposta:} letra \textbf{\resposta}.
+}{%
+    \ifdefstring{\modo}{objetivo}{%
+        \alternativas
+    }{%
+        % modo = discursiva → não mostra alternativas
+    }
+}
+\end{exercicioBanco}
+

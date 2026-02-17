@@ -1,0 +1,125 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{../Preambulo.tex}
+\newcommand{\atividade}{as} % prova ou lista ou as ou ad ou atividade
+\newcommand{\calculadora}{nao} % sim ou nao
+\newcommand{\ValorQObj}{1}
+\input{../Variaveis.tex}
+
+\hypersetup{
+    pdfauthor={\professor},
+    pdftitle={AS \-- MATEMÁTICA \-- \turma},
+}
+
+\title{AS \-- MATEMÁTICA \-- \turma}
+\author{\professor}
+\date{\data}
+
+\graphicspath{
+    {../Conjuntos/}
+    {../FuncoesAfins/}
+    {../FuncoesExponenciais/}
+    {../FuncoesLogaritmicas/}
+    {../FuncoesModulares/}
+    {../FuncoesQuadraticas/}
+    {../FuncoesReais/}
+    {../TrigonometriaI/}
+    {../TrigonometriaII/}
+}
+
+%************* INÍCIO DO DOCUMENTO *************
+\begin{document}
+    \NoBgThispage
+    \pagenumbering{alph}
+    %
+        
+    \phantomsection
+    \addcontentsline{toc}{section}{Capa}
+    \input{../AS_Capa}
+    %
+    \newpage
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{1}
+    \newpage
+    %        
+        
+    \NoBgThispage
+    \pagenumbering{arabic}
+    %
+        
+    \subtituloas
+    
+    \vspace{15pt}
+    \newcommand{\modo}{objetivo} % objetivo ou discursivo
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 1}
+    \input{../FuncoesExponenciais/FE_Exercicio2}
+    \vspace{15pt}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 2}
+    \input{../FuncoesExponenciais/FE_Exercicio13}
+    \vspace{15pt}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 3}
+    \input{../FuncoesExponenciais/FE_Exercicio19}
+    \vspace{15pt}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 4}
+    \input{../FuncoesLogaritmicas/FL_Exercicio3}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 5}
+    \input{../FuncoesLogaritmicas/FL_Exercicio15}
+    \vspace{15pt}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 6}
+    \input{../FuncoesLogaritmicas/FL_Exercicio20}
+    \vspace{15pt}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 7}
+    \input{../TrigonometriaI/TI_Exercicio10}
+    \vspace{15pt}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 8}
+    \input{../TrigonometriaI/TI_Exercicio13}
+    \vspace{15pt}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 9}
+    \input{../TrigonometriaI/TI_Exercicio24}
+    \vspace{15pt}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 10}
+    \input{../TrigonometriaII/TII_Exercicio1}
+    \vspace{15pt}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 11}
+    \input{../TrigonometriaII/TII_Exercicio7}
+    \vspace{15pt}
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Exercício 12}
+    \input{../TrigonometriaII/TII_Exercicio16}
+    \vspace{15pt}
+    
+    \newpage
+    \null
+    \thispagestyle{empty}
+    \newpage
+    
+    \phantomsection
+    \addcontentsline{toc}{section}{Rascunho}
+    \input{../Rascunho}
+    
+\end{document}
+%*************** FINAL DO DOCUMENTO ***************
