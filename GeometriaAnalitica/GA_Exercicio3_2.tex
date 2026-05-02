@@ -1,0 +1,48 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \ifdefstring{\modo}{objetivo}{%
+        \renewcommand{\valorquestao}{\ValorQObj\ ponto}
+    }{%
+        \renewcommand{\valorquestao}{\ValorQDisc\ pontos}
+    }%
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+Três cidades \(A\), \(B\) e \(C\) situam-se ao longo de uma estrada reta; \(B\) situa-se entre \(A\) e \(C\) e a distância de \(B\) a \(C\) é igual à metade da distância de \(A\) a \(B\). Um encontro foi marcado por 3 moradores, um de cada cidade, em um ponto \(P\) da estrada, localizado entre as cidades \(B\) e \(C\) e à distância de 180 km de \(A\). Sabendo-se que \(P\) está 30 km mais próximo de \(C\) do que de \(B\), determinar a distância que o morador de \(B\) deverá percorrer até o ponto de encontro.
+
+% Define as alternativas
+\newcommand{\alternativas}{%
+    \begin{center}
+        \begin{tabularx}{\textwidth}{XXXXX}
+            (a) \(30\) km. &
+            (b) \(40\) km. &
+            (c) \(50\) km. &
+            (d) \(60\) km. &
+            (e) \(70\) km.
+        \end{tabularx}
+    \end{center}
+}
+
+% Define a resposta correta
+\newcommand{\resposta}{D}
+
+% Lógica condicional para exibição
+\ifdefstring{\atividade}{lista}{%
+    \alternativas
+    \vspace{0.5em}
+    
+    \noindent\textbf{Resposta:} letra \textbf{\resposta}.
+}{%
+    \ifdefstring{\modo}{objetivo}{%
+        \alternativas
+    }{%
+        % modo = discursiva → não mostra alternativas
+    }
+}
+\end{exercicioBanco}
+

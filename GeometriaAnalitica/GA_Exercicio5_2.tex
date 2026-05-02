@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \ifdefstring{\modo}{objetivo}{%
+        \renewcommand{\valorquestao}{\ValorQObj\ ponto}
+    }{%
+        \renewcommand{\valorquestao}{\ValorQDisc\ pontos}
+    }%
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+Para cada afirmativa abaixo, assinale se ela é verdadeira (V) ou falsa (F).
+%
+\begin{enumerate}[\(\bullet\)]
+    \item \(A = (1,2)\), \(B = (3,6)\) e \(C = (5,10)\) estão alinhados.
+    %
+    \item As retas \(r\) e \(s\) determinadas, respectivamente, pelas equações \(6x + 9y - 3 = 0\) e \(2x + 3y + 5 = 0\) são paralelas.
+    %
+    \item A distância entre o ponto \(P = (1,2)\) e a reta \(r: 3x + 4y - 10 = 0\) é \(1\).
+\end{enumerate}
+%
+
+% Define as alternativas
+\newcommand{\alternativas}{%
+    \begin{center}
+        \begin{tabularx}{\textwidth}{XXXXX}
+            (a) (V, V, V). &
+            (b) (V, V, F). &
+            (c) (F, V, F). &
+            (d) (V, F, V). &
+            (e) (F, V, V).
+        \end{tabularx}
+    \end{center}
+}
+
+% Define a resposta correta
+\newcommand{\resposta}{B}
+
+% Lógica condicional para exibição
+\ifdefstring{\atividade}{lista}{%
+    \alternativas
+    \vspace{0.5em}
+    
+    \noindent\textbf{Resposta:} letra \textbf{\resposta}.
+}{%
+    \ifdefstring{\modo}{objetivo}{%
+        \alternativas
+    }{%
+        % modo = discursiva → não mostra alternativas
+    }
+}
+\end{exercicioBanco}
+

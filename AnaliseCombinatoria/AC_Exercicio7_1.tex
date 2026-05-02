@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       EXERCÍCIO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefstring{\atividade}{prova}{%
+    \ifdefstring{\modo}{objetivo}{%
+        \renewcommand{\valorquestao}{\ValorQObj\ ponto}
+    }{%
+        \renewcommand{\valorquestao}{\ValorQDisc\ pontos}
+    }%
+}%
+
+\begin{exercicioBanco}[\valorquestao]
+Uma mostra científica deve ser exposta ao público
+de acordo com as seguintes orientações:
+%
+\begin{enumerate}[\(\bullet\)]
+    \item apresentar todos os 3 trabalhos de álgebra e todos os 3 trabalhos de geometria.
+    %
+    \item os trabalhos devem estar alocados em uma parede, lado a lado, de modo que os trabalhos de álgebra não fiquem de forma adjacente.
+\end{enumerate}
+%
+De quantos modos essa mostra de trabalho pode ser exposta?
+
+% Define as alternativas
+\newcommand{\alternativas}{%
+    \begin{center}
+        \begin{tabularx}{\textwidth}{XXXXX}
+            (a) \(6\). &
+            (b) \(36\). &
+            (c) \(48\). &
+            (d) \(128\). &
+            (e) \(144\).
+        \end{tabularx}
+    \end{center}
+}
+
+% Define a resposta correta
+\newcommand{\resposta}{E}
+
+% Lógica condicional para exibição
+\ifdefstring{\atividade}{lista}{%
+    \alternativas
+    \vspace{0.5em}
+    
+    \noindent\textbf{Resposta:} letra \textbf{\resposta}.
+}{%
+    \ifdefstring{\modo}{objetivo}{%
+        \alternativas
+    }{%
+        % modo = discursiva → não mostra alternativas
+    }
+}
+\end{exercicioBanco}
+
