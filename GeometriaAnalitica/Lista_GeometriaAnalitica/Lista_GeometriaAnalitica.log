@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.14)  17 FEB 2026 10:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.14)  19 APR 2026 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1991,7 +1991,7 @@ st/fonts/enc/dvips/ly1/texnansi.enc}]) (../GA_Exercicio6_1.tex) (../GA_Exercici
 o7_1.tex)
 (../GA_Exercicio8_1.tex) (../GA_Exercicio9_1.tex) (../GA_Exercicio10_1.tex)
 (../GA_Exercicio11_1.tex [2]) (../GA_Exercicio12_1.tex)
-(../GA_Exercicio13_1.tex) (../GA_Exercicio14_1.tex
+(../GA_Exercicio13_1.tex) (../GA_Exercicio14_1.tex) (../GA_Exercicio15_1.tex
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 10.51207pt on input line 37.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
@@ -2008,21 +2008,21 @@ LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
 (Font)              scaled to size 10.51207pt on input line 37.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
 (Font)              scaled to size 10.51207pt on input line 37.
-) [3]
-(./Lista_GeometriaAnalitica.aux)
+
+[3]) [4] (./Lista_GeometriaAnalitica.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `Lista_GeometriaAnalitica.out' has not change
 d.
-(rerunfilecheck)             Checksum: F1D5D89B993DD1EE41560D646254BF27;1505.
+(rerunfilecheck)             Checksum: 73077F3FF4311445A0D1840203C2BB5C;1617.
  ) 
 Here is how much of TeX's memory you used:
- 55891 strings out of 474222
- 1309246 string characters out of 5748732
+ 55905 strings out of 474222
+ 1309546 string characters out of 5748732
  1958975 words of memory out of 5000000
- 76917 multiletter control sequences out of 15000+600000
+ 76925 multiletter control sequences out of 15000+600000
  589781 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,12n,120p,1290b,1132s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2032,10 +2032,10 @@ xlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb>
-Output written on Lista_GeometriaAnalitica.pdf (3 pages, 73522 bytes).
+Output written on Lista_GeometriaAnalitica.pdf (4 pages, 74517 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 33037 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 33045 words of extra memory for PDF output out of 35830 (max. 10000000)
 
